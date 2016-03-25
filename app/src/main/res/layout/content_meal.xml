@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.rohanchinchwade.personaldietitian.Meal"
+    tools:showIn="@layout/activity_meal"
+    android:background="#c5c9c8"
+    android:clickable="false">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#ffffff"
+        android:id="@+id/frameLayout">
+
+        <!-- android:outlineProvider="background"-->
+
+        <ImageView
+            android:layout_width="114dp"
+            android:layout_height="114dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+
+            android:id="@+id/imageView2"
+            android:layout_gravity="left|center_vertical"
+            />
+
+        <TextView
+            android:layout_width="213dp"
+            android:layout_height="52dp"
+            android:text="Add Description Here"
+            android:id="@+id/textView2"
+            android:layout_gravity="right|center_vertical"
+            android:typeface="sans"
+            android:textSize="20sp"
+            android:autoText="false"
+            android:enabled="true"
+            android:paddingRight="@dimen/abc_button_padding_horizontal_material" />
+
+    </FrameLayout>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#e6e2e2"
+        android:spinnerMode="dropdown"
+        android:clickable="true"
+        android:dropDownWidth="fill_parent"
+
+        android:layout_below="@+id/frameLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#e6e2e2"
+        android:spinnerMode="dropdown"
+        android:clickable="true"
+        android:dropDownWidth="fill_parent"
+        android:layout_below="@+id/spinner1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:longClickable="false"
+        android:layoutMode="clipBounds"
+        android:outlineProvider="paddedBounds"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#e6e2e2"
+        android:spinnerMode="dropdown"
+        android:clickable="true"
+        android:dropDownWidth="fill_parent"
+        android:text="Add Drink"
+        android:padding="1dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:prompt="@string/Add_Drink" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#e6e2e2"
+        android:spinnerMode="dropdown"
+        android:clickable="true"
+        android:dropDownWidth="fill_parent"
+        android:text="Add Drink"
+        android:padding="1dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Upload Meal"
+        android:id="@+id/button"
+        android:layout_below="@+id/spinner3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:background="#7fb648" />
+
+</RelativeLayout>
+

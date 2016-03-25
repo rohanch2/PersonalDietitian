@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.rohanchinchwade.personaldietitian.Profile"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentBottom="true"
+    android:weightSum="1"
+    android:background="#c5c9c8">
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="top|bottom"
+        android:longClickable="true"
+        android:background="@drawable/user" />
+
+    <ImageButton
+        android:layout_width="114dp"
+        android:layout_height="126dp"
+        android:id="@+id/imageButton"
+        android:layout_gravity="top|center_horizontal|right"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/imageButton4"
+        android:layout_alignStart="@+id/imageButton4"
+        android:background="@drawable/meal"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:outlineProvider="bounds"
+        android:cropToPadding="false"
+        android:layout_margin="1dp" />
+
+    <TextView
+        android:layout_width="187dp"
+        android:layout_height="55dp"
+        android:typeface="sans"
+        android:textSize="20sp"
+        android:text="Rohan Chinchwade"
+        android:id="@+id/textView"
+        android:hint="User Name"
+        android:layout_gravity="top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="114dp"
+        android:layout_height="126dp"
+        android:id="@+id/imageButton2"
+        android:layout_gravity="top|center_horizontal|right"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:background="@drawable/run" />
+
+    <ImageButton
+        android:layout_width="114dp"
+        android:layout_height="126dp"
+        android:id="@+id/imageButton3"
+        android:layout_gravity="top|center_horizontal|right"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:layout_toEndOf="@+id/imageButton2"
+        android:background="@drawable/stats"
+        android:backgroundTint="#ffffff"
+        android:backgroundTintMode="multiply" />
+
+    <ImageButton
+        android:layout_width="114dp"
+        android:layout_height="126dp"
+        android:id="@+id/imageButton4"
+        android:layout_gravity="top|center_horizontal|right"
+        android:layout_below="@+id/imageButton"
+        android:layout_toLeftOf="@+id/imageButton2"
+        android:layout_toStartOf="@+id/imageButton2"
+        android:focusable="true"
+        android:background="@drawable/report" />
+
+    <ImageButton
+        android:layout_width="114dp"
+        android:layout_height="126dp"
+        android:id="@+id/imageButton5"
+        android:layout_gravity="top|center_horizontal|right"
+        android:layout_below="@+id/imageButton"
+        android:layout_toRightOf="@+id/imageButton4"
+        android:layout_toEndOf="@+id/imageButton4"
+        android:clickable="false"
+        android:background="@drawable/time" />
+
+    <ImageButton
+        android:layout_width="114dp"
+        android:layout_height="126dp"
+        android:id="@+id/imageButton6"
+        android:layout_gravity="top|center_horizontal|right"
+        android:layout_below="@+id/imageButton2"
+        android:layout_toRightOf="@+id/imageButton5"
+        android:layout_toEndOf="@+id/imageButton5"
+        android:background="@drawable/mail" />
+
+</RelativeLayout>

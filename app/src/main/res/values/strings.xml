@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PersonalDietitian</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_meal">Meal</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="Add_Drink"> Add Drink </string>
+    <string name="Add"> Add Drink to the meal </string>
+    <string name="Hunger">Premeal hunger </string>
+    <string name="Postmeal">Postmeal Fullness </string>
+    <string name="Mood">What is your mood now</string>
+    <string name="login">LOGIN</string>
+</resources>
